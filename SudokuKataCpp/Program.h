@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include <Utilities/PortableRandomNumberGenerator.h>
+#include "Utilities/PortableRandomNumberGenerator.h"
 namespace SudokuKata
 {
     class Program
