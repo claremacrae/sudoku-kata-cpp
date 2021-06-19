@@ -12,15 +12,17 @@ uint32_t next_pow_2_minus_1(uint32_t v)
     return v;
 }
 
-MyDistribution::MyDistribution(int smallest, int largest)
-    : smallest(smallest), largest(largest)
-{}
+MyDistribution::MyDistribution(int smallest, int largest) : smallest(smallest), largest(largest)
+{
+}
 
 PortableRandomNumberGenerator::PortableRandomNumberGenerator() : engine(std::random_device()())
-{}
+{
+}
 
 PortableRandomNumberGenerator::PortableRandomNumberGenerator(int seed) : engine(seed)
-{}
+{
+}
 
 int PortableRandomNumberGenerator::next(int lower, int upper)
 {

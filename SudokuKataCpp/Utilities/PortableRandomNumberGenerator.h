@@ -12,17 +12,17 @@ struct MyDistribution
     int largest;
     MyDistribution(int smallest, int largest);
 
-    template<typename Engine>
-    int operator()(Engine &e)
+    template <typename Engine> int operator()(Engine& e)
     {
         uint32_t range = largest - smallest;
-        if ( range == 0 )
+        if (range == 0)
         {
             return smallest;
         }
         uint32_t mask = next_pow_2_minus_1(range);
         uint32_t candidate = e() & mask;
-        while (candidate > range) {
+        while (candidate > range)
+        {
             candidate = e() & mask;
         }
         return int(candidate) + smallest;
