@@ -24,7 +24,8 @@ namespace SudokuKata::Utilities
                                  int index7,
                                  int index8);
 
-        static std::string ToTriplet(const std::vector<int>& board, int index0, int index1, int index2);
+        static std::string
+        ToTriplet(const std::vector<int>& board, int index0, int index1, int index2);
 
         static std::string ToCell(int value);
 
