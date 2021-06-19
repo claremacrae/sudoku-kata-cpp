@@ -65,8 +65,7 @@ namespace SudokuKata
 
                 if (!stateStack.empty())
                 {
-                    std::copy_n(
-                        stateStack.top().begin(), currentState.size(), currentState.begin());
+                    currentState = stateStack.top();
                 }
 
                 int bestRow = -1;
@@ -230,8 +229,7 @@ namespace SudokuKata
 
         std::vector<int> state = stateStack.top();
 
-        std::vector<int> finalState(state.size());
-        std::copy_n(state.begin(), finalState.size(), finalState.begin());
+        std::vector<int> finalState = state;
 
         int removedPos = 0;
         while (removedPos < 9 * 9 - remainingDigits)
@@ -897,8 +895,7 @@ namespace SudokuKata
                     int digit2 = candidateDigit2.front();
                     candidateDigit2.pop_front();
 
-                    std::vector<int> alternateState(finalState.size());
-                    std::copy_n(state.begin(), alternateState.size(), alternateState.begin());
+                    std::vector<int> alternateState = state;
 
                     if (finalState[index1] == digit1)
                     {
@@ -929,15 +926,11 @@ namespace SudokuKata
 
                             if (!stateStack.empty())
                             {
-                                std::copy_n(stateStack.top().begin(),
-                                            currentState.size(),
-                                            currentState.begin());
+                                currentState = stateStack.top();
                             }
                             else
                             {
-                                std::copy_n(alternateState.begin(),
-                                            currentState.size(),
-                                            currentState.begin());
+                                currentState = alternateState;
                             }
 
                             int bestRow = -1;
