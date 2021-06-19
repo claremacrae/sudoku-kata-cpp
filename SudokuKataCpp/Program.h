@@ -6,6 +6,6 @@ namespace SudokuKata
     class Program
     {
     public:
-        static void Play(PortableRandomNumberGenerator& rng, std::ostream& console);
+        static void Play(std::ostream& console, PortableRandomNumberGenerator& rng);
     };
 }

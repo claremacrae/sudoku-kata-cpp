@@ -6,5 +6,5 @@
 int main()
 {
     PortableRandomNumberGenerator random;
-    SudokuKata::Program::Play(random, std::cout);
+    SudokuKata::Program::Play(std::cout, random);
 }
