@@ -4,7 +4,7 @@ include(FetchContent)
 # ApprovalTests.cpp
 FetchContent_Declare(ApprovalTests
         GIT_REPOSITORY https://github.com/approvals/ApprovalTests.cpp.git
-        GIT_TAG master)
+        GIT_TAG v.10.9.1)
 FetchContent_MakeAvailable(ApprovalTests)
 
 # -------------------------------------------------------------------
