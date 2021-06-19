@@ -1,6 +1,7 @@
 add_executable(SudokuKataTestsCpp
         main.cpp
         PortableRandomNumberGeneratorTests.cpp
+        ProgramTests.cpp
         )
 
 target_link_libraries(SudokuKataTestsCpp SudokuKataCpp ApprovalTests::ApprovalTests Catch2::Catch2)
