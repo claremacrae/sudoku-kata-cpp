@@ -7,6 +7,10 @@ add_library(SudokuKataCpp
         Program.h
         TwoDigitMaskGroups.cpp
         TwoDigitMaskGroups.h
+        Utilities/CandidatesStringifier.cpp
+        Utilities/CandidatesStringifier.h
+        Utilities/GridStringifier.cpp
+        Utilities/GridStringifier.h
         Utilities/PortableRandomNumberGenerator.cpp
         Utilities/PortableRandomNumberGenerator.h
         )

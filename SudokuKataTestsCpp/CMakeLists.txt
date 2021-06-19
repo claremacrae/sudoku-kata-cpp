@@ -1,5 +1,6 @@
 add_executable(SudokuKataTestsCpp
         main.cpp
+        GridStringifierTests.cpp
         PortableRandomNumberGeneratorTests.cpp
         ProgramTests.cpp
         )
