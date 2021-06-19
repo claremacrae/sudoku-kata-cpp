@@ -1,6 +1,8 @@
 #include "Program.h"
+#include "Utilities/PortableRandomNumberGenerator.h"
 
 int main()
 {
-    SudokuKata::Program::Play();
+    PortableRandomNumberGenerator random;
+    SudokuKata::Program::Play(random);
 }

@@ -1,10 +1,11 @@
 ﻿#pragma once
 
+#include <Utilities/PortableRandomNumberGenerator.h>
 namespace SudokuKata
 {
     class Program
     {
     public:
-        static void Play();
+        static void Play(PortableRandomNumberGenerator& rng);
     };
 }

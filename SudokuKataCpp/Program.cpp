@@ -17,9 +17,8 @@
 namespace SudokuKata
 {
 
-    void Program::Play()
+    void Program::Play(PortableRandomNumberGenerator& rng)
     {
-        PortableRandomNumberGenerator rng;
         std::ostream& console = std::cout;
 
         // >>>> #region Construct fully populated board
